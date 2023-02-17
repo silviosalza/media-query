@@ -3,3 +3,56 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/** MEDIA QUERY EXAMPLES */
+/* SERVE PER RENDERE RESPONSIVE IL LAYOUT, RENDENDOLO FRUIBILE ANCHE SU MOBILE */
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 600px;
+    background-color: lightcoral;
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+        width: 100%;
+    }   
+}
+@media screen and (min-width: 1200px) {
+    .container{
+        width: 60%;
+    }
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.col{
+    width: 20%;
+    background-color: lightblue;
+    min-height: 300px;
+
+}
+
+@media screen and (max-width: 900px) {
+    .col{
+        width: 40%;
+        background-color: lavender;
+    }   
+}
+
+@media screen and (max-width:600px)  {
+    .col{
+        width:100%;
+        background-color: lightsalmon;
+        
+    }
+    
+}
+
+/** quando lavoro dekstop first l'ordine di scrittura deve essere dal più largo al più stretto */
